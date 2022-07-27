@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link as NLink } from "react-scroll";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
       <div className="container">
         <div className="logo-wrapper" style={{ cursor: "pointer" }}>
           <Link href="/">
-            <img src="/assets/logo.png" alt="logo" />
+            <Image src="/assets/logo.png" alt="logo" width={80} height={80} />
           </Link>
         </div>
         <div className="nav-items">
