@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(rgba(87,46,24, 0.7), rgba(87,46,24, 0.7)), url(/assets/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "poppins";
+}
+
+// ::selection {
+//   background-color: #fff;
+//   color: #fff;
+// }
+
+h1,
+h2 {
+  font-family: "Scary HorrOrs";
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+button,
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: "Scary HorrOrs";
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+img {
+  user-select: none;
+  width: 100%;
+}
