@@ -1,4 +1,4 @@
-import { Button, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "./components/navbar";
