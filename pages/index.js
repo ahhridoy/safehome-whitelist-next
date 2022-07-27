@@ -1,4 +1,3 @@
-import { Form } from "react-bootstrap";
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "./components/navbar";
@@ -29,7 +28,7 @@ export default function Home() {
                 Check if you are whitelisted !
               </h1>
               <form className="form" data-aos="fade-up" data-aos-duration="500">
-                <Form.Control placeholder="Your eth wallet address" required />
+                <input placeholder="Your eth wallet address" required />
                 <div className="btn-wrapper">
                   <button className="connect-btn">
                     <div className="btn-inner">
