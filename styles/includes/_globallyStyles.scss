@@ -9,12 +9,13 @@ html {
 }
 
 body {
-  background: linear-gradient(rgba(87,46,24, 0.7), rgba(87,46,24, 0.7)), url(/assets/home-bg.jpg);
+  background: linear-gradient(rgba(87, 46, 24, 0.7), rgba(87, 46, 24, 0.7)),
+    url(/assets/home-bg.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   color: #fff;
-  font-family: "poppins";
+  font-family: "Anton", sans-serif;
 }
 
 // ::selection {
@@ -24,11 +25,7 @@ body {
 
 h1,
 h2 {
-  font-family: "Scary HorrOrs";
-}
-
-p {
-  line-height: 1.75;
+  font-family: "Anton", sans-serif;
 }
 
 a {
@@ -46,7 +43,6 @@ textarea {
   outline: none;
   border: none;
   background: none;
-  font-family: "Scary HorrOrs";
 }
 
 button,

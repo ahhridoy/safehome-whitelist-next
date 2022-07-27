@@ -1,92 +1,109 @@
 @import "../includes/imports";
 
 #white-listed {
-	margin-top: 300px;
+  margin-top: 300px;
 
-	@media screen and (max-width: 768px) {
-		margin-top: 150px;
-	}
-	.container {
-		// display: grid;
-		// grid-template-columns: 1fr 3fr 1fr;
-		// .first {
-		// 	img {
-		// 		max-width: 277px;
-		// 	}
-		// }
-		.content {
-			text-align: center;
-			.heading {
-				font-family: $primaryFont;
-				font-style: normal;
-				font-size: clamp(38px, 3vw, 58px);
-				line-height: 49px;
-				color: $primaryColor;
-				text-align: center;
-			}
-			.form {
-				margin-top: 30px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				gap: 10px;
-				max-width: 600px;
-				margin: 0 auto;
-				flex-direction: column;
-				margin-top: 30px;
+  @media screen and (max-width: 768px) {
+    margin-top: 200px;
+  }
+  .container {
+    // display: grid;
+    // grid-template-columns: 1fr 3fr 1fr;
+    // .first {
+    // 	img {
+    // 		max-width: 277px;
+    // 	}
+    // }
+    .content {
+      text-align: center;
+      .heading {
+        font-family: $primaryFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: clamp(38px, 3vw, 100px);
+        line-height: 49px;
+        color: $primaryColor;
+        text-align: center;
+      }
+      .form {
+        margin-top: 30px;
+        gap: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 30px;
+        input {
+          padding: 20px;
+          width: 100%;
+          font-family: $secondaryFont;
+          font-size: 24px;
+          font-weight: 500;
+          border-radius: 8px;
+          background: white;
+          margin-bottom: 15px;
+        }
+        .btn-wrapper {
+          text-align: center;
+          .connect-btn {
+            max-width: 480px;
+            width: 100%;
+            background-color: #572e18;
+            font-family: $secondaryFont;
+            font-size: 30px;
+            font-weight: 0;
+            color: #fff;
+            border-radius: 8px;
+            transition: 0.3s;
+            padding: 4px;
 
-				input {
-					padding: 15px;
-					border-radius: 5px;
-					background: white;
-					font-family: $secondaryFont;
-					width: 100% !important;
-					font-size: 16px;
-					font-weight: 500;
-				}
-				button {
-					padding: 11px;
-					border-radius: 5px;
-					font-family: $secondaryFont;
-					background: $secondaryColor;
-					width: 100%;
-					border-radius: 5px;
-					font-style: normal;
-					font-size: clamp(10px, 3vw, 24px);
-					line-height: clamp(18px, 3vw, 25px);
-					padding: 14px;
-					transition: 0.2s ease-in-out all;
+            .btn-inner {
+              position: relative;
+              height: 100%;
+              width: 100%;
+              padding: 16px 0;
 
-					&:hover {
-						background-color: $primaryColor;
-					}
-				}
-			}
-			.img-box {
-				margin-top: 50px;
-				img {
-					max-width: 277px;
-				}
-			}
-		}
-		// .third {
-		// 	img {
-		// 		max-width: 277px;
-		// 	}
-		// }
-		@media screen and (max-width: 768px) {
-			grid-template-columns: 1fr;
-			text-align: center;
-			.second {
-				.form {
-					input {
-						width: 200px;
-					}
-				}
-				.img-box {
-					display: none;
-				}
-			}
-		}
-	}
+              svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            &:hover {
+              transform: scale(1.01);
+              background-color: #703d21;
+            }
+          }
+        }
+      }
+      // .img-box {
+      // 	margin-top: 50px;
+      // 	img {
+      // 		max-width: 277px;
+      // 	}
+      // }
+    }
+    // .third {
+    // 	img {
+    // 		max-width: 277px;
+    // 	}
+    // }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+      .second {
+        .form {
+          input {
+            width: 200px;
+          }
+        }
+        .img-box {
+          display: none;
+        }
+      }
+    }
+  }
 }
