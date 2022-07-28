@@ -47,7 +47,7 @@ export default function Home() {
                           fill="#fff"
                         />
                       </svg>
-                      Connect Wallet
+                      Check
                     </div>
                   </button>
                 </div>
